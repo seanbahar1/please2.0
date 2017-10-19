@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <title>GRIFFEN</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+</head>
+<body>
+
+    <!--<![endif]-->
+    <script src="http://cdn.tmijs.org/js/latest/1.x/tmi.min.js"></script>
+<!--addcmd-->
+    <div id="cmdout">
+        
+            <textarea id="cmd" rows="1" cols="1"placeholder="!+the cmd"></textarea>
+           <button id="li">mod</button> 
+        <textarea id="delay" rows="1" cols="1"placeholder="t"></textarea>
+        <textarea id="command" rows="4" cols="1"placeholder="what to say goes here ..."></textarea>
+        <button id="send">to send</button>
+    </div>
+    
+    <script type="text/javascript">
+        var ifmod = ["mod", "normal"]
+        var options = {
+            options: {
+                debug: true
+            },
+            connection: {
+                reconnect: true,
+            },
+            identity: {
+                username: "darkgriffen_bot",
+                password: "oauth:oexr91zh6l9f8s0nf9frmoxdtojuez"
+            },
+            channels: ["seanbahar1"]
+        };
+
+        var client = new tmi.client(options);
+
+        // Connect the client to the server
+        client.connect();
+        window.addEventListener("load", function () {
+            loadcss();//work
+            
+        })
+        window.addEventListener("resize", function () {
+            loadcss();//work
+        })
+        var modb = document.getElementById('li'),
+            cmd = document.getElementById('cmd'),
+            delay = document.getElementById('delay'),
+            command = document.getElementById('command'),
+            send = document.getElementById('send');
+        function loadcss() {//YAY math
+            var x = window.innerWidth;
+            var y = window.innerHeight;
+            var tox = x;
+            var toy = (y / 10);
+            /*outer cmd*/
+            document.getElementById("cmdout").style.width = tox+"px";
+            document.getElementById("cmdout").style.height = toy + "px";
+            /*text place for the cmd*/
+            document.getElementById("cmd").style.width = tox/5 + "px";
+            document.getElementById("cmd").style.height = (toy / 3) * 2 + "px";
+            document.getElementById("cmd").style.top = (toy / 3) * 2 + "px";
+            /*check*/
+            document.getElementById('li').style.width = (tox / 5) / 2 + 'px';
+            document.getElementById("li").style.height = (toy / 3) * 2 + "px";
+            document.getElementById("li").style.top = -30 + "px";
+            //delay
+            document.getElementById("delay").style.width = tox / 5/4 + "px";
+            document.getElementById("delay").style.height = (toy / 3) * 2 + "px";
+            document.getElementById("delay").style.top = (toy / 3) * 2 + "px";
+            //command
+            document.getElementById("command").style.width = tox/ 3 + "px";
+            document.getElementById("command").style.height = (toy / 3) * 2 + "px";
+            document.getElementById("command").style.top = (toy / 3) * 2 + "px";
+            //send
+            document.getElementById('send').style.width = (tox / 5) / 2 + 'px';
+            document.getElementById("send").style.height = (toy / 3) * 2 + "px";
+            
+        }
+        modb.addEventListener("click", function () {
+            if (modb.innerHTML === 'mod') {
+                modb.innerHTML = ifmod[1];
+                
+            }
+            else {
+                modb.innerHTML = ifmod[0];
+               
+            }
+        })
+        
+        send.addEventListener("click", function () {
+            console.log("here")
+            var c ="!"+ cmd.value;
+            var mod = modb.innerHTML;
+            var time = delay.value;
+            var msg = command.value;
+
+            
+            while (init(c, " ") === true || c === '!') {
+                c = prompt("cannot have a space ( ) ")
+
+                cmd.value = c;
+                c = "!" + c;
+            }
+            
+            console.log(mod)
+            switch (isNaN(time)) {
+                case true:
+                    time = prompt("time is a numer and does not need to have a letter")
+                    delay.value = time;
+                    break;
+                case false:
+                    console.log(time)
+                    break;
+            }
+            while (msg === null || msg === undefined || msg === " ") {
+                msg = prompt("please enter message again")
+                command.value = msg;
+            }
+
+            client.whisper("seanbahar2","!addcmd " + c + " " + mod + " " + time + " - " + msg)
+            
+            });
+              //  client.sendMessage("chit_chat", "!addcmd " + c + " " + mod + " " + time + " - " + msg);
+         
+            
+                       
+            
+
+        
+        function init(where, what) {
+            var fa = false;
+            if (where.includes(what)) {
+                fa = true;
+            }
+            console.log(fa)
+            return fa;
+        }
+    </script>
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+	"ifmod": "normal",
+	"delay": 15,
+	"say": "$(tag) I totally didn't edit this command at all :P ... not even slightly... :P",
+	"cd": 0
+}

@@ -1,0 +1,6 @@
+{
+	"ifmod": "normal",
+	"delay": 30,
+	"say": "this is a random cmd of no value  $(tag)  $(gennum,1,20) $(gennum,1,100000)",
+	"cd": 0
+}

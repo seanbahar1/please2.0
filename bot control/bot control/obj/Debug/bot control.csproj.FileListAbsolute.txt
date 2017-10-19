@@ -1,0 +1,9 @@
+C:\Users\sb737\Documents\MEGAsync\darkgriffen_bot\bot control\bot control\bin\Debug\bot control.exe.config
+C:\Users\sb737\Documents\MEGAsync\darkgriffen_bot\bot control\bot control\bin\Debug\bot control.exe
+C:\Users\sb737\Documents\MEGAsync\darkgriffen_bot\bot control\bot control\bin\Debug\bot control.pdb
+C:\Users\sb737\Documents\MEGAsync\darkgriffen_bot\bot control\bot control\obj\Debug\bot control.csprojResolveAssemblyReference.cache
+C:\Users\sb737\Documents\MEGAsync\darkgriffen_bot\bot control\bot control\obj\Debug\bot_control.Form1.resources
+C:\Users\sb737\Documents\MEGAsync\darkgriffen_bot\bot control\bot control\obj\Debug\bot_control.Properties.Resources.resources
+C:\Users\sb737\Documents\MEGAsync\darkgriffen_bot\bot control\bot control\obj\Debug\bot control.csproj.GenerateResource.Cache
+C:\Users\sb737\Documents\MEGAsync\darkgriffen_bot\bot control\bot control\obj\Debug\bot control.exe
+C:\Users\sb737\Documents\MEGAsync\darkgriffen_bot\bot control\bot control\obj\Debug\bot control.pdb

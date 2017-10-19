@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "darkgriffen_bot", "darkgriffen_bot\darkgriffen_bot.njsproj", "{381B1F17-5CD7-4121-8A91-F1246E2BF80F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{381B1F17-5CD7-4121-8A91-F1246E2BF80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381B1F17-5CD7-4121-8A91-F1246E2BF80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381B1F17-5CD7-4121-8A91-F1246E2BF80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381B1F17-5CD7-4121-8A91-F1246E2BF80F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

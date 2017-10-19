@@ -1,0 +1,46 @@
+﻿body {
+}
+#cmdout{
+    width:10px;
+    height:10px;
+ 
+
+}
+#cmd {
+    width: 4px;
+    height: 4px;
+    background-color: lawngreen;
+   
+    resize: none;
+    position: static;
+}
+#li {
+    width: 4px;
+    height: 4px;
+    background-color: red;
+    
+    position: relative ;
+}
+#delay {
+    width: 4px;
+    height: 4px;
+    background-color: orange;
+    resize: none;
+    position: static;
+}
+#command {
+    width: 4px;
+    height: 4px;
+    background-color: deeppink;
+    resize: none;
+ 
+    position: static;
+}
+#send {
+    width: 4px;
+    height: 4px;
+    background-color: dimgrey;
+    position: static;
+    top:1px;
+}
+

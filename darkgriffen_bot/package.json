@@ -1,0 +1,19 @@
+{
+  "name": "darkgriffen_bot",
+  "version": "0.0.0",
+  "description": "darkgriffen_bot",
+  "main": "app.js",
+  "author": "seanbahar1",
+  "dependencies": {
+    "anchorme": "^1.1.2",
+    "discord.js": "^11.2.1",
+    "node-notifier": "^5.1.2",
+    "tmi.js": "^1.2.1",
+    "twitch-followers": "github:elmigranto/twitch-followers"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
