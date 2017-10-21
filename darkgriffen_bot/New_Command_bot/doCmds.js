@@ -12,7 +12,7 @@ var options = {
     },
     identity: {
         username: "darkgriffen_bot",
-        password: "oauth:oexr91zh6l9f8s0nf9frmoxdtojuez"
+        password: "OUATH"
     },
     channels: ["darklordgriffen"]
 }; var client = new tmi.client(options);
